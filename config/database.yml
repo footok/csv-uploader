@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: csv-uploader-development
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: csv-uploader-test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: csv-uploader-production
+
