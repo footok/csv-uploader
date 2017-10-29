@@ -12,13 +12,5 @@ class Api::RecordController < Api::BaseController
   def create
     Record.import(params[:file])
     redirect_to root_url, notice: "CSV imported"
-    #redirect_to :action => 'index'
-    #respond_with Record.create(record_params)
-  end
-
-  private
-
-  def record_params
-    params.require(:record).permit(:id, :name, :date, :number, :description)
   end
 end

@@ -100,7 +100,7 @@ class Main extends React.Component {
       <div>
         {records.length > 0 &&
           <div>
-            <input id="input" className="filter" onChange={this.handleChange} type="text" />
+            <input id="input" className="filter" onChange={this.handleChange} placeholder="Search by name.." type="text" />
             <table id="table">
               <thead>
                 <tr>
