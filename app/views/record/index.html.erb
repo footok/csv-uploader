@@ -1,0 +1,8 @@
+<div>
+  <h4>Import CSV file</h4>
+  <%= form_tag 'api/record.csv', multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import csv file" %>
+  <% end %>
+<%= react_component 'Main' %>
+</div>

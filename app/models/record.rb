@@ -6,4 +6,8 @@ class Record < ActiveRecord::Base
       Record.create! row.to_hash
     end
   end
+
+  def self.order_by(column)
+    Record.order(column)
+  end
 end
