@@ -86,12 +86,7 @@ class Main extends React.Component {
     if (records.length > 0) {
       renderTableBody = records.map((record) => {
         return (
-          <tr key={record.id}>
-            <td>{record.name}</td>
-            <td>{record.date}</td>
-            <td>{record.number}</td>
-            <td>{record.description}</td>
-          </tr>
+          <TableBody key={record.id} record={record}/>
         )
       });
     }
