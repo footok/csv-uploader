@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'record#index'
+  root 'site#index'
 
   get 'api/record/order'
 

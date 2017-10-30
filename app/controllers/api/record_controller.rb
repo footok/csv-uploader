@@ -1,5 +1,4 @@
 class Api::RecordController < Api::BaseController
-  skip_before_action :verify_authenticity_token
 
   def index
     respond_with @records = Record.all
