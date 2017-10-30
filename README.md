@@ -8,7 +8,7 @@ Also, user can sort the table by clicking column headers, and filtering by name 
 ## Getting started
 
 ### Prerequisites
-Make sure you have set correct ruby version.
+Make sure you have set correct ruby version and installed postgresql in your machine.
 
 Ruby version used
 
@@ -27,6 +27,13 @@ Run bundle
 ```
 bundle
 ```
+
+Create database
+
+```
+createdb csv-uploader-development
+```
+
 
 Run migration
 
