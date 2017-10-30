@@ -1,4 +1,4 @@
-class Main extends React.Component {
+class Table extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,9 +30,7 @@ class Main extends React.Component {
       case 'ASC':
         orderOption = 'DESC'
         this.setState({ orderOption: 'DESC' });
-        break;
-      case 'DESC':
-        orderOption = 'ASC'
+        break; case 'DESC': orderOption = 'ASC'
         this.setState({ orderOption: 'ASC' });
         break;
     }
@@ -86,7 +84,7 @@ class Main extends React.Component {
     if (records.length > 0) {
       renderTableBody = records.map((record) => {
         return (
-          <TableBody key={record.id} record={record}/>
+          <TableRow key={record.id} record={record}/>
         )
       });
     }

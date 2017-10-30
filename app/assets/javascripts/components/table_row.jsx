@@ -1,4 +1,4 @@
-const TableBody = ({record}) => {
+const TableRow = ({record}) => {
   return (
     <tr>
       <td>{record.name}</td>
